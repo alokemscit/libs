@@ -33,5 +33,20 @@ Call Crop Activity:
             }
         }
     }
+    
+    
+    
+     final String[] descriptionData = {"Case", "Description", "Identification", "Dead body","Place Info"};
+      stbar.setStateDescriptionData(descriptionData);
+
+
+
+        stbar.setOnStateItemClickListener(new OnStateItemClickListener() {
+        @Override
+        public void onStateItemClick(StateBar stateProgressBar, StateItem stateItem, int stateNumber, boolean isCurrentState) {
+        Toast.makeText(getApplicationContext() , "Listener Clicked" , Toast.LENGTH_LONG).show();
+        }
+        });
+
                     
                     
