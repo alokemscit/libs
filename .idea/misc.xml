@@ -8,10 +8,13 @@
         <entry key="..\:/Android Project/Library/libraries/src/main/res/layout/crop_image_activity.xml" value="0.22083333333333333" />
         <entry key="..\:/Android Project/Library/libraries/src/main/res/layout/crop_image_view.xml" value="0.22083333333333333" />
         <entry key="..\:/Android Project/Library/libraries/src/main/res/menu/crop_image_menu.xml" value="0.16197916666666667" />
+        <entry key="..\:/AndroidProject/libs-main/libraries/src/main/res/drawable/smsp_transparent_color.xml" value="0.12129629629629629" />
+        <entry key="..\:/AndroidProject/libs-main/libraries/src/main/res/layout/activity_runtime_render_view_activity.xml" value="0.18854166666666666" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
