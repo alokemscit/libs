@@ -1,7 +1,22 @@
+
 plugins {
     id 'com.android.application'
+  //  id 'kotlin-android'
+   // id 'kotlin-android-extensions'
+
+  id 'kotlin-parcelize'
     id 'maven-publish'
 }
+
+/*
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'maven-publish'
+*/
+
+
 android {
     compileSdk 30
 
@@ -25,6 +40,9 @@ android {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -35,6 +53,8 @@ dependencies {
 
     implementation 'com.google.android.material:material:1.2.1'
 
+    implementation  "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10"
+    implementation "androidx.cardview:cardview:1.0.0"
 
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
 

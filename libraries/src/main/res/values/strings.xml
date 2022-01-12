@@ -12,5 +12,16 @@
     <string name="pick_image_intent_chooser_title">Select source</string>
 
     <string name="crop_image_activity_no_permissions">Cancelling, required permissions are not granted</string>
+    <string name="check_icon">&#xf00c;</string>
 
+
+
+
+    <string name="lib_name">SearchableSpinner</string>
+    <string name="search_or_select_item">Search/Select Item</string>
+    <string name="select_item">Select Item</string>
+
+    <string name="app_name">expandablecardview</string>
+    <string name="expandable_card_view_image_content_description">Arrow to expand card</string>
+    <string name="expandable_card_view_icon_content_description">Card icon</string>
 </resources>

@@ -1,8 +1,22 @@
+/*
 plugins {
     id 'com.android.library'
-    // id 'kotlin-android'
+    id 'kotlin-android'
+    id  'kotlin-android-extensions'
+'
     id 'maven-publish'
 }
+*/
+
+
+
+
+apply plugin: 'com.android.library'
+//apply plugin: 'kotlin-android'
+//apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'maven-publish'
+
 
 
 android {
@@ -55,12 +69,18 @@ android {
         }
     }
 
-
+    buildFeatures {
+        viewBinding true
+    }
 }
+
 
 dependencies {
 
     api "androidx.appcompat:appcompat:1.2.0"
     implementation "androidx.exifinterface:exifinterface:1.2.0"
+    implementation  "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10"
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
 
 }
