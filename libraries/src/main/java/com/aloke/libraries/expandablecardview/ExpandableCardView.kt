@@ -1,6 +1,5 @@
 package com.aloke.libraries.expandablecardview
 
-
 import android.content.Context
 import android.content.res.TypedArray
 import android.graphics.Color
@@ -20,12 +19,6 @@ import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import com.aloke.libraries.R
 import kotlinx.android.synthetic.main.expandable_cardview.view.*
-
-//import kotlinx.android.synthetic.main.expandable_cardview.view.*
-
-
-//import kotlinx.android.synthetic.main.expandable_cardview.view.*
-
 
 class ExpandableCardView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0) : LinearLayout(context, attrs, defStyleAttr) {
 
@@ -78,7 +71,7 @@ class ExpandableCardView @JvmOverloads constructor(context: Context, attrs: Attr
         val typedArray = context.obtainStyledAttributes(attrs, R.styleable.ExpandableCardView)
         this@ExpandableCardView.typedArray = typedArray
         title = typedArray.getString(R.styleable.ExpandableCardView_title)
-       // color = typedArray.getColor(R.styleable.ExpandableCardView_title)
+        // color = typedArray.getColor(R.styleable.ExpandableCardView_title)
         iconDrawable = typedArray.getDrawable(R.styleable.ExpandableCardView_icon)
         innerViewRes = typedArray.getResourceId(R.styleable.ExpandableCardView_inner_view, View.NO_ID)
         expandOnClick = typedArray.getBoolean(R.styleable.ExpandableCardView_expandOnClick, false)
@@ -126,8 +119,8 @@ class ExpandableCardView @JvmOverloads constructor(context: Context, attrs: Attr
 
         if (targetHeight - initialHeight != 0) {
             animateViews(initialHeight,
-                    targetHeight - initialHeight,
-                    EXPANDING)
+                targetHeight - initialHeight,
+                EXPANDING)
         }
     }
 
@@ -135,8 +128,8 @@ class ExpandableCardView @JvmOverloads constructor(context: Context, attrs: Attr
         val initialHeight = card_layout.measuredHeight
         if (initialHeight - previousHeight != 0) {
             animateViews(initialHeight,
-                    initialHeight - previousHeight,
-                    COLLAPSING)
+                initialHeight - previousHeight,
+                COLLAPSING)
         }
     }
 
@@ -178,10 +171,10 @@ class ExpandableCardView @JvmOverloads constructor(context: Context, attrs: Attr
 
         val arrowAnimation = if (animationType == EXPANDING)
             RotateAnimation(0f, 180f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF,
-                    0.5f)
+                0.5f)
         else
             RotateAnimation(180f, 0f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF,
-                    0.5f)
+                0.5f)
 
         arrowAnimation.fillAfter = true
 
@@ -264,5 +257,6 @@ class ExpandableCardView @JvmOverloads constructor(context: Context, attrs: Attr
     }
 
 }
+
 
 
