@@ -3,6 +3,20 @@ plugins {
     // id 'kotlin-android'
     id 'maven-publish'
 }
+<<<<<<< Updated upstream
+=======
+*/
+
+
+
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+//apply plugin: 'android-maven'
+apply plugin: 'maven-publish'
+
+>>>>>>> Stashed changes
 
 
 android {
@@ -61,6 +75,13 @@ android {
 dependencies {
 
     api "androidx.appcompat:appcompat:1.2.0"
+
     implementation "androidx.exifinterface:exifinterface:1.2.0"
+<<<<<<< Updated upstream
+=======
+    //implementation  "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10"
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+>>>>>>> Stashed changes
 
 }

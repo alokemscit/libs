@@ -10,6 +10,11 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.0.3'
+<<<<<<< Updated upstream
+=======
+//        implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.6.10'
+       classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10'
+>>>>>>> Stashed changes
         // classpath 'com.google.gms:google-services:4.3.10'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -25,6 +30,9 @@ allprojects {
             url 'https://maven.google.com'
         }
         maven { url "https://jitpack.io" }
+        maven {
+            url 'https://dl.bintray.com/kotlin/kotlin-dev/'
+        }
     }
 }
 
